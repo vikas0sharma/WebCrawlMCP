@@ -1,6 +1,6 @@
 {
-  "description": "A sample MCP server",
-  "name": "io.github.yourusername/SampleMcpServer", 
+  "description": "An MCP server that crawls web pages and returns their text content.",
+  "name": "io.github.vikas0sharma/WebCrawl", 
   "packages": [
     {
       "registry_name": "nuget",
@@ -10,7 +10,7 @@
     }
   ],
   "repository": {
-    "url": "https://github.com/yourusername/SampleMcpServer",
+    "url": "https://github.com/vikas0sharma/WebCrawlMCP",
     "source": "github"
   },
   "version_detail": {
