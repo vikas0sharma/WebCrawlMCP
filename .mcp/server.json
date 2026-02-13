@@ -1,0 +1,19 @@
+{
+  "description": "A sample MCP server",
+  "name": "io.github.yourusername/SampleMcpServer", 
+  "packages": [
+    {
+      "registry_name": "nuget",
+      "name": "WebCrawl",
+      "version": "1.0.0",
+      "package_arguments": []
+    }
+  ],
+  "repository": {
+    "url": "https://github.com/yourusername/SampleMcpServer",
+    "source": "github"
+  },
+  "version_detail": {
+    "version": "1.0.0"
+  }
+}
