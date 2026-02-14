@@ -1,6 +1,6 @@
 {
   "description": "An MCP server that crawls web pages and returns their text content.",
-  "name": "io.github.vikas0sharma/WebCrawl", 
+  "name": "WebCrawl",
   "packages": [
     {
       "registry_name": "nuget",
