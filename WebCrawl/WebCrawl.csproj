@@ -1,17 +1,31 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
+		<Version>0.0.3</Version>
 		<PackageId>WebCrawl</PackageId>
 		<OutputType>Exe</OutputType>
 		<TargetFramework>net10.0</TargetFramework>
 		<ImplicitUsings>enable</ImplicitUsings>
 		<Nullable>enable</Nullable>
+
+		<!-- Set up the NuGet package to be an MCP server -->
+		<PackAsTool>true</PackAsTool>
+		<PackageType>McpServer</PackageType>
+		<McpServerJsonTemplateFile>.mcp\server.json</McpServerJsonTemplateFile>
+
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+
 	</PropertyGroup>
 
 	<ItemGroup>
 		<PackageReference Include="Microsoft.Extensions.Hosting" Version="10.0.3" />
 		<PackageReference Include="Microsoft.Extensions.Http" Version="10.0.3" />
 		<PackageReference Include="ModelContextProtocol" Version="0.8.0-preview.1" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Include="..\README.md" Pack="true" PackagePath="\" />
+		<None Include="..\.mcp\server.json" Pack="true" PackagePath =".mcp\server.json" />
 	</ItemGroup>
 
 </Project>

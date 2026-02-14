@@ -1,19 +1,22 @@
 {
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-09-29/server.schema.json",
   "description": "An MCP server that crawls web pages and returns their text content.",
-  "name": "io.github.vikas0sharma/WebCrawl", 
+  "name": "io.github.vikas0sharma/WebCrawlMCP",
+  "version": "0.0.3",
   "packages": [
     {
-      "registry_name": "nuget",
-      "name": "WebCrawl",
-      "version": "1.0.0",
-      "package_arguments": []
+      "registryType": "nuget",
+      "identifier": "WebCrawl",
+      "version": "0.0.3",
+      "transport": {
+        "type": "stdio"
+      },
+      "packageArguments": [],
+      "environmentVariables": []
     }
   ],
   "repository": {
     "url": "https://github.com/vikas0sharma/WebCrawlMCP",
     "source": "github"
-  },
-  "version_detail": {
-    "version": "1.0.0"
   }
 }
